@@ -6,7 +6,7 @@ If we use `installer` to install `InstallAssistant.pkg` on the system, it extrac
 An attacker could remove the `restricted` flag of any folder like `/Library/Application Support/com.apple.TCC/`, move the folder to any other location, and replace the folder with a malicious one containing a custom TCC database.
 
 ## Requirements
-1. A terminal with `root` privileges
+A terminal with `root` privileges
 
 ## Steps
 1. [Download](https://mrmacintosh.com/macos-ventura-13-full-installer-database-download-directly-from-apple/) InstallAssistant.pkg
