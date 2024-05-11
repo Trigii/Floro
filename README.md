@@ -1,5 +1,5 @@
 # Floro: Bypass System Integrity Protecion (SIP) on MacOS With Just Two Commands
-This vulnerability allows to bypass **System Integrity Protection (SIP)** and gain **Full Disk Access (FDA)** among other things. It allows to remove the `restricted` flag on any folder on the system with just two lines of code. This vulnerability has no CVE assisnged, and has been tested on macOS 14.0 and earlier. This exploit doesn`t work on MacOS 14.4. Versions 14.1, 14.2 and 14.3 have not been tested.
+This vulnerability allows to bypass **System Integrity Protection (SIP)** and gain **Full Disk Access (FDA)** among other things. It allows to remove the `restricted` flag on any folder on the system with just two lines of code. This vulnerability has no CVE assisnged, and has been tested on macOS 14.0 and earlier. This exploit do not work on MacOS 14.4. Versions 14.1, 14.2 and 14.3 have not been tested.
 
 If we use `installer` to install `InstallAssistant.pkg` on the system, it extracts the packages on `/Applications/Install macOS Ventura.app`. If before installing the package we create a symbolic link on `/Applications/` called `Install macOS Ventura.app` that points to a folder with the `restricted` flag, `system_installd` removes the `restricted` flag of the folder.
 
